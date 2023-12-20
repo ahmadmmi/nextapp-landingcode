@@ -7,10 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      boxShadow: { "sh-header": "0px 5px 30px 0px rgba(0, 0, 0, 0.15)" },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gr-home":
+          "linear-gradient(180deg, rgba(88, 194, 177, 0.15) 3.44%, rgba(197, 197, 197, 0) 97.88%)",
       },
     },
   },
