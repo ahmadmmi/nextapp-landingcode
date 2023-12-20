@@ -1,5 +1,5 @@
 const Portofolio = () => {
-  return <div>Portofolio</div>;
+  return <div className='h-96 border'>Portofolio</div>;
 };
 
 export default Portofolio;
