@@ -8,6 +8,7 @@ const Images = (props) => {
         src={src}
         alt={alt}
         fill
+        objectFit='contain'
         placeholder='blur'
         blurDataURL={src}
       ></Image>
