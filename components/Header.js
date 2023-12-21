@@ -33,7 +33,7 @@ const Header = () => {
     <header>
       <nav className='fixed top-0 left-0 w-full z-10 shadow-sh-header bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800'>
         <div className='flex flex-wrap justify-between items-center mx-auto max-w-screen-xl'>
-          <a href='#' className='flex items-center'>
+          <a href='#' className='flex items-center space-x-2'>
             <div className='relative w-[76px] h-[73px]'>
               <Image
                 src='/images/logo.png'
@@ -44,13 +44,14 @@ const Header = () => {
               ></Image>
             </div>
             <span className='self-center text-xl font-semibold whitespace-nowrap dark:text-white'>
-              Code<span>atHome</span>
+              Code<span className='font-normal text-gray-600'>atHome</span>
             </span>
           </a>
           <div className='flex items-center lg:order-2'>
             <a
               href='#'
-              className='text-white bg-teal-700 hover:bg-teal-800 focus:ring-4 focus:ring-teal-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-teal-600 dark:hover:bg-teal-700 focus:outline-none dark:focus:ring-teal-800'
+              // className='text-white bg-teal-700 hover:bg-teal-800 focus:ring-4 focus:ring-teal-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-teal-600 dark:hover:bg-teal-700 focus:outline-none dark:focus:ring-teal-800'
+              className='rounded-full bg-teal-500 hover:bg-teal-600 text-white text-md font-medium  px-4 lg:px-5 py-2 lg:py-2.5 mr-2'
             >
               Consult Now
             </a>
