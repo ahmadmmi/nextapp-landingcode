@@ -1,6 +1,8 @@
 import Images from "@/components/Images";
 export default function Service1() {
   const data = {
+    title: "Special Expertise from Us",
+    desc: "I Would like to hear about Company updates and special offers",
     list_items: [
       {
         id: 1,
@@ -43,7 +45,10 @@ export default function Service1() {
   const renderItems = () => {
     return data.list_items.map((item) => {
       return (
-        <div key={item.id} className='grid-span-1 border rounded-2xl p-7'>
+        <div
+          key={item.id}
+          className='col-span-6 lg:col-span-3 xl:col-span-2 border rounded-2xl p-7'
+        >
           <div className='flex flex-col justify-center items-center'>
             <Images
               src={item.image}
@@ -63,9 +68,14 @@ export default function Service1() {
   };
 
   return (
-    <div>
-      <p className='text-4xl font-bold'>Special Expertise from Us</p>
-      <div className='grid grid-cols-3 gap-10'>{renderItems()}</div>
+    <div className='mt-20'>
+      <p className='text-4xl font-bold text-[#58c2b1] text-center'>
+        {data.title}
+      </p>
+      <p className='mt-4 text-gray-600 font-medium text-lg text-center'>
+        {data.desc}
+      </p>
+      <div className='grid grid-cols-6 gap-10 mt-10'>{renderItems()}</div>
     </div>
   );
 }
